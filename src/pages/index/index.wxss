@@ -1,8 +1,0 @@
-view::before {
-  content: "";
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  background: green;
-  top: 10px;
-}

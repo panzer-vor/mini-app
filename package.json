@@ -3,17 +3,31 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "sideEffects": false,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=none BUILD_TYPE=release webpack --watch --progress",
+    "build": "cross-env NODE_ENV=production BUILD_TYPE=release webpack"
+  },
   "devDependencies": {
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
+    "@tinajs/mina-runtime-webpack-plugin": "^1.2.1",
     "babel-loader": "^8.0.6",
     "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^5.0.3",
+    "cross-env": "^5.2.0",
+    "ensure-posix-path": "^1.1.1",
+    "file-loader": "^4.0.0",
+    "node-sass": "^4.12.0",
     "replace-ext": "^1.0.0",
+    "required-path": "^1.0.1",
+    "sass-loader": "^7.1.0",
+    "ts-loader": "^6.0.2",
+    "typescript": "^3.5.2",
     "webpack": "^4.34.0",
     "webpack-cli": "^3.3.4"
   },
   "dependencies": {
-    "ramda": "^0.26.1"
+    "rxjs": "^6.5.2"
   }
 }
