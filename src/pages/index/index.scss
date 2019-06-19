@@ -1,19 +1,13 @@
 view {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 100px;
-  height: 100px;
-  background: blue;
-  &::before {
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background: green;
-    top: 10px;
-  }
+  font-size: 80rpx;
+  height: 100rpx;
+  font-weight: bolder;
+  line-height: 100rpx;
+}
+input {
+  font-size: 80rpx;
+  font-weight: bolder;
+  height: 100rpx;
+  width: 200rpx;
+  text-align: center;
 }

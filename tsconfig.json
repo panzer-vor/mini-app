@@ -1,26 +1,31 @@
 {
   "compilerOptions": {
-    "baseUrl": "./",
-    "target": "es5",
-    "module":"es2015",
-    "lib": ["es2015", "es2016", "es2017", "dom"],
-    "strict": true,
-    "sourceMap": true,
-    "declaration": true,
+    "target": "es2017",
+    "module": "commonjs",
     "removeComments": false,
-    "noImplicitReturns": true,
-    "noImplicitAny": true,
     "preserveConstEnums": true,
-    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
     "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
-    "declarationDir": "dist/types",
+    "noImplicitAny": false,
+    "allowSyntheticDefaultImports": true,
     "outDir": "dist",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strictNullChecks": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "rootDir": ".",
+    "allowJs": true,
+    "resolveJsonModule": true,
     "typeRoots": [
-      "node_modules/@types"
-    ],
+      "node_modules/@types",
+      "global.d.ts",
+      "src/typing"
+    ]
   },
-  "include": [
-    "src"
-  ]
+  "exclude": [
+    "node_modules",
+    "dist"
+  ],
+  "compileOnSave": false
 }

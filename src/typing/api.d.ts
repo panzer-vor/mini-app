@@ -4309,6 +4309,7 @@ declare namespace wx {
   }
 
   interface WX {
+    wxRx: WX;
 
     offLocalServiceDiscoveryStop(callback: () => void): void
     offLocalServiceFound(callback: () => void): void
@@ -10681,6 +10682,7 @@ declare namespace wx {
      *
      * 最低基础库： `1.4.0` */
     abort(): void;
+    subscribe(...params: any): any
   }
   interface SocketTask {
     /** [SocketTask.send(Object object)](SocketTask.send.md)
@@ -12391,6 +12393,7 @@ declare namespace wx {
   type WriteFileFailCallback = (result: WriteFileFailCallbackResult) => void;
   /** 接口调用成功的回调函数 */
   type WriteFileSuccessCallback = (res: GeneralCallbackResult) => void;
+  
 }
 
 declare const wx: wx.WX

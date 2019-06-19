@@ -1,4 +1,6 @@
 //app.js
+import './utils/wxRx'
+
 App({
   onLaunch: function () {
 
