@@ -13,6 +13,15 @@
 ### <a name="start">⊙ 启动</a>
 `yarn dev`后打开微信开发者工具访问根目录 
 
+### <a name="start">⊙ API?</a>
+通过`wx.wxRx`调用`wx`同名api的rxjs封装版
+
+```javascript
+wx.wxRx.request({
+  url: '...',
+})
+.subscribe(res => ...)
+```
 ***
 
 ## <a name="features">&sect; 技术栈</a>
