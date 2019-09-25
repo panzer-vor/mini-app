@@ -8,6 +8,8 @@ Page({
     sum: 0,
   },
   onLoad() {
+    wx.wxRx.login().subscribe(console.log)
+    
     const pipeL$ = pipe(
       interval,
     )(1000)
